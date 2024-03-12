@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherCast | Home</title>
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="fav2.png" type="image/x-icon">
+      <!-- Shery JS CSS CDN    -->
+      <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-part1">
+        <h2 class="magnet">WeatherCast</h2>
+      </div>
+      <div class="nav-part2">
+        <div class="link">
+          <a href="home.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="icons magnet">
+          <i class="ri-menu-line"></i>
+          <i class="ri-user-line"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="cursor"></div>
+    
+    <video src="vid.mp4" muted autoplay loop></video>
+    
+    <div class="main">
+      <div class="page1">
+        <h1>WeatherCast</h1>
+        <h2>
+          Unlock the Skies with WeatherCast: <br>
+          Your Ultimate Weather Dashboard          
+        </h2>
+        <div class="btn">
+          <a href="index.html"><span>Get Started</span></a>
+        </div>
+        
+        <p>          
+          Discover the WeatherCast difference – an immersive, detailed dashboard
+          offering real-time weather insights in both light and dark modes.
+          Seamlessly toggle between Celsius and Fahrenheit units, explore live
+          conditions in your city, and stay connected with a sidebar showcasing
+          weather highlights from major cities worldwide. Crafted with
+          precision, powered by OpenWeather API.
+        </p>
+
+        <div class="line"></div>
+      </div>
+
+      <footer>
+        <div class="copyright">
+          <p>&copy;2024 WeatherCast All Rights Reserved</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- locomotive js -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <!-- gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- ScrollTrigger -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+      integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+      integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- Shery JAVASCRIP CDN -->
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> 
+
+    <script src="home.js"></script>
+
+     <!-- Chatbot Script -->
+     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+     <script>
+       window.botpressWebChat.init({
+         composerPlaceholder: "Chat with WeatherCast",
+         botConversationDescription:
+           "Your knowledgeable guide in providing information with a friendly touch.",
+         botId: "e66649e4-f14d-454b-86c5-590bc1fda73d",
+         hostUrl: "https://cdn.botpress.cloud/webchat/v1",
+         messagingUrl: "https://messaging.botpress.cloud",
+         clientId: "e66649e4-f14d-454b-86c5-590bc1fda73d",
+         webhookId: "e1732401-992d-41d7-8c19-05a7299eaec5",
+         lazySocket: true,
+         themeName: "prism",
+         botName: "WeatherCast",
+         stylesheet:
+           "https://webchat-styler-css.botpress.app/prod/code/6ce2846b-57be-4b11-b204-16f178a5b3d5/v97916/style.css",
+         frontendVersion: "v1",
+         useSessionStorage: true,
+         enableConversationDeletion: true,
+         theme: "prism",
+         themeColor: "#2563eb",
+       });
+     </script>
+  </body>
+</html>
